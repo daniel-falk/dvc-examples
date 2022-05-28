@@ -4,9 +4,9 @@ stages:
     cmd: cp data.json plot_data.json
     deps:
     - path: data.json
-      md5: f406f72d4034880a26517b4cc4cc60e4
+      md5: f4b17388c5e1b7d945321a483fec7364
       size: 181
     outs:
     - path: plot_data.json
-      md5: f406f72d4034880a26517b4cc4cc60e4
+      md5: f4b17388c5e1b7d945321a483fec7364
       size: 181

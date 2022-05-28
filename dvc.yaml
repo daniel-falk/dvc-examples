@@ -1,0 +1,11 @@
+stages:
+  make_data:
+    cmd: cp data.json plot_data.json
+    deps:
+    - data.json
+    plots:
+    - plot_data.json:
+        cache: false
+        x: class
+        y: value
+        template: ./.dvc/plots/bar.json

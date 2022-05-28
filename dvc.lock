@@ -1,0 +1,12 @@
+schema: '2.0'
+stages:
+  make_data:
+    cmd: cp data.json plot_data.json
+    deps:
+    - path: data.json
+      md5: f406f72d4034880a26517b4cc4cc60e4
+      size: 181
+    outs:
+    - path: plot_data.json
+      md5: f406f72d4034880a26517b4cc4cc60e4
+      size: 181

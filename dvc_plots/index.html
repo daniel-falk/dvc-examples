@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>DVC Plot</title>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    
+</head>
+<body>
+    
+    <div id = "plot_plot_data_json">
+        <script type = "text/javascript">
+            var spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+    {
+        "class": "all",
+        "filename": "plot_data.json",
+        "rev": "workspace",
+        "value": 2208.201290480213
+    },
+    {
+        "class": "subset1",
+        "filename": "plot_data.json",
+        "rev": "workspace",
+        "value": 1841.9859846942586
+    },
+    {
+        "class": "subset2",
+        "filename": "plot_data.json",
+        "rev": "workspace",
+        "value": 1051.8727099035762
+    }
+]
+  },
+  "title": "",
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "class"},
+    "y": {"field": "value", "type": "quantitative", "stack": false},
+    "xOffset": {"field": "rev"},
+    "color": {"field": "rev"}
+  }
+}
+;
+            vegaEmbed('#plot_plot_data_json', spec);
+        </script>
+    </div>
+    
+</body>
+</html>
